@@ -13,25 +13,25 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-138976741-1');
-
-    
   </script>
-      <script>
-        /**
-        * Function that registers a click on an outbound link in Analytics.
-        * This function takes a valid URL string as an argument, and uses that URL string
-        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-        * using 'navigator.sendBeacon' in browser that support it.
-        */
-        var getOutboundLink = function(url) {
-          gtag('event', 'click', {
-            'event_category': 'outbound',
-            'event_label': url,
-            'transport_type': 'beacon',
-            'event_callback': function(){document.location = url;}
-          });
+  <script>
+    /**
+     * Function that registers a click on an outbound link in Analytics.
+     * This function takes a valid URL string as an argument, and uses that URL string
+     * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+     * using 'navigator.sendBeacon' in browser that support it.
+     */
+    var getOutboundLink = function (url) {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+        'event_callback': function () {
+          document.location = url;
         }
-        </script>
+      });
+    }
+  </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,7 +80,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="https://www.colleencushnie.com" onclick="getOutboundLink('http://www.colleencushnie.com'); return false;">Colleen Cushnie</a>
+      <a class="navbar-brand" href="https://www.colleencushnie.com"
+        onclick="getOutboundLink('http://www.colleencushnie.com'); return false;">Colleen Cushnie</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -108,7 +109,7 @@
               <a class="dropdown-item" href="post6.html">You Must Comply</a>
               <a class="dropdown-item" href="post7.html">Analyze This</a>
               <a class="dropdown-item" href="post8.html">Setting Goals</a>
-                            <a class="dropdown-item" href="#">Week 9 Coming Soon</a>
+              <a class="dropdown-item" href="post9.html">Ooh! Ah! Alpha Beta!</a>
             </div>
           </li>
           <li class="nav-item">
@@ -143,15 +144,15 @@
         <div class="list-group">
           <a href="post1.html" class="list-group-item">Initiate Analysis</a>
           <a href="post2.html" class="list-group-item">Playing Marco Polo</a>
-              <a href="post3.html" class="list-group-item">Testing the Page</a>
-              <a href="post4.html" class="list-group-item">Testing on the Go</a>
-              <a href="post5.html" class="list-group-item">A Web Page for All</a>
-              <a href="post6.html" class="list-group-item">You Must Comply</a>
-              <a href="post7.html" class="list-group-item">Analyze This</a>
-              <a href="post8.html" class="list-group-item">Setting Goals</a>
-                            <a href="#" class="list-group-item">Week 9 Coming Soon</a>
-              
-              
+          <a href="post3.html" class="list-group-item">Testing the Page</a>
+          <a href="post4.html" class="list-group-item">Testing on the Go</a>
+          <a href="post5.html" class="list-group-item">A Web Page for All</a>
+          <a href="post6.html" class="list-group-item">You Must Comply</a>
+          <a href="post7.html" class="list-group-item">Analyze This</a>
+          <a href="post8.html" class="list-group-item">Setting Goals</a>
+          <a href="post9.html" class="list-group-item">Ooh! Ah! Alpha Beta!</a>
+
+
 
         </div>
       </div>
@@ -160,7 +161,7 @@
         <div class="post-preview">
           <a href="about.html">
             <h2 class="post-title">
-              Hi. 
+              Hi.
             </h2>
             <h3 class="post-subtitle">
               Nice to meet you.
@@ -179,7 +180,7 @@
               Excited to share my thoughts and findings.
             </h3>
           </a>
-          <p class="post-meta">Posted 
+          <p class="post-meta">Posted
             on April 5, 2019</p>
         </div>
         <div class="post-preview">
@@ -192,7 +193,7 @@
             </h3>
           </a>
           <p class="post-meta">Posted by
-            
+
             on April 16, 2019</p>
         </div>
         <div class="post-preview">
@@ -204,7 +205,7 @@
               Does this do what you want it to do?
             </h3>
           </a>
-          <p class="post-meta">Posted 
+          <p class="post-meta">Posted
             on May 26, 2019</p>
         </div>
         <div class="post-preview">
@@ -216,7 +217,7 @@
               Big web. Little screen.
             </h3>
           </a>
-          <p class="post-meta">Posted 
+          <p class="post-meta">Posted
             on May 26, 2019</p>
         </div>
         <div class="post-preview">
@@ -228,7 +229,7 @@
               Is the internet for some but not for all?
             </h3>
           </a>
-          <p class="post-meta">Posted 
+          <p class="post-meta">Posted
             on May 11, 2019</p>
         </div>
         <div class="post-preview">
@@ -240,7 +241,7 @@
               Am I practicing what I preach?
             </h3>
           </a>
-          <p class="post-meta">Posted 
+          <p class="post-meta">Posted
             on May 12, 2019</p>
         </div>
         <div class="post-preview">
@@ -252,20 +253,22 @@
               Google Analytics and your data
             </h3>
           </a>
-          <p class="post-meta">Posted 
+          <p class="post-meta">Posted
             on May 28, 2019</p>
         </div>
         <div class="post-preview">
           <a href="post8.html">
-            <h2 class="post-title">
-              Setting Goals
-            </h2>
-            <h3 class="post-subtitle">
-              Did I set the bar too high? Or not high enough?
-            </h3>
+            <h2 class="post-title">Setting Goals</h2>
+            <h3 class="post-subtitle">Did I set the bar too high? Or not high enough?</h3>
           </a>
-          <p class="post-meta">Posted 
-            on June 6, 2019</p>
+          <p class="post-meta">Posted on June 6, 2019</p>
+        </div>
+        <div class="post-preview">
+          <a href="post9.html">
+            <h2 class="post-title">Ooh! Ah! Alpha Beta!</h2>
+            <h3 class="post-subtitle">An experiment in A/B testing</h3>
+          </a>
+          <p class="post-meta">Posted on June 9, 2019</p>
         </div>
         <hr>
 
